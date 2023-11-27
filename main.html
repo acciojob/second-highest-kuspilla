@@ -10,15 +10,16 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			 if( arr.length == 0) return 0;
-             else if( arr.length == 1) return arr[0];
-			 else{
+			 if (arr.length == 0) return 'Infinity';
+             else if (arr.length == 1) return 'Infinity';
+			 else {
 				 arr.sort();
-				 return arr[ arr.length-2];
-				 
+				 if(arr[0] === arr[arr.length-2]) return 'Infinity';
+					 
+				 else return arr[arr.length-2];
 			 }
   			
-	
+
 		}
 
 		function Main() {

@@ -10,11 +10,11 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			 if (arr.length == 0) return 'Infinity';
-             else if (arr.length == 1) return 'Infinity';
+			 if (arr.length == 0) return -Infinity;
+             else if (arr.length == 1) return -Infinity;
 			 else {
 				 arr.sort();
-				 if(arr[0] === arr[arr.length-2]) return 'Infinity';
+				 if(arr[0] === arr[arr.length-2]) return -Infinity;
 					 
 				 else return arr[arr.length-2];
 			 }
